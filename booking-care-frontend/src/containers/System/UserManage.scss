@@ -1,0 +1,105 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 12px;
+
+    &hover {
+        background-color: #45a049;
+    }
+}
+
+.btn-delete {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 12px;
+
+    &hover {
+        background-color: #da190b;
+    }
+}
+
+.modal-user-container {
+    .close {
+        background-color: transparent;
+        border: none;
+        font-size: 27px;
+        color: white;
+        cursor: pointer;
+    }
+    .modal-user-body {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+
+            &.max-width-input {
+                width: 100%;
+            }
+            &.min-width-input {
+                width: 20%;
+            }
+
+            input {
+                border-radius: 3px;
+                height: 30px;
+                border: 1px solid grey;
+                outline: none;
+                padding: 0 10px;
+            }
+            select {
+                border-radius: 3px;
+                height: 30px;
+                border: 1px solid grey;
+                outline: none;
+                padding: 0 10px;
+            }
+        }
+    }
+}

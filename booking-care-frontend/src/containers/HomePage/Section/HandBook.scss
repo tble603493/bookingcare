@@ -1,0 +1,124 @@
+.section-handBook {
+    height: 330px;
+    background: #fff;
+    // border: 1px solid red;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    .handBook-container {
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        .handBook-header {
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 20px;
+
+            .title-section {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                float: right;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                display: block;
+                background: #ebebeb;
+                color: black;
+                cursor: pointer;
+                text-transform: uppercase;
+                &:hover {
+                    background: #f7d800;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .handBook-body {
+        // border: 1px solid black;
+
+        .slick-slide {
+            display: flex !important;
+            justify-content: space-around;
+        }
+
+        .img-customize {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+
+            height: 250px;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; // căn giữa ngang
+            //text-align: center;
+
+            img {
+                width: 100%;
+                max-width: 266px;
+                height: 173px;
+                object-fit: contain;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+            div {
+                margin-top: 8px; // khoảng cách giữa ảnh và chữ
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+                display: -webkit-box; // cần cho line-clamp
+                -webkit-line-clamp: 2; // số dòng tối đa = 2
+                -webkit-box-orient: vertical;
+                overflow: hidden; // ẩn phần dư
+                text-overflow: ellipsis; // hiện ...
+                max-width: 266px; // bằng chiều rộng ảnh
+            }
+        }
+        .slick-prev {
+            top: 85px;
+            left: -10px !important;
+            z-index: 1000 !important;
+            height: 48px !important;
+            width: 44px !important;
+            background: #fff !important;
+            border: 2px solid #d7d7d7 !important;
+            border-radius: 100px;
+
+            &:hover {
+                background: #eceaea !important;
+            }
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: FontAwesome !important;
+            color: black !important;
+            //content: "\f060" !important;
+        }
+        .slick-disabled {
+            display: none !important;
+        }
+
+        .slick-next {
+            top: 85px;
+            right: -10px !important;
+            z-index: 1000 !important;
+            height: 48px !important;
+            width: 44px !important;
+            background: #fff !important;
+            border: 2px solid #d7d7d7 !important;
+            border-radius: 100px;
+            transition-duration: 0s;
+
+            &:hover {
+                background: #eceaea !important;
+            }
+        }
+    }
+}
