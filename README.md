@@ -30,7 +30,6 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=bookingcare
-JWT_SECRET=your_jwt_secret
 ```
 
 If there is an SQL dump included (e.g. `bookingcare.sql`) import it into MySQL:
@@ -50,7 +49,7 @@ npm start
 ```
 
 By default, the backend will run at:  
-👉 `http://localhost:8080`
+👉 `http://localhost:8081`
 
 ---
 
@@ -92,7 +91,6 @@ By default, the frontend will run at:
 -   Online appointment booking by specialty/doctor
 -   Schedule management for patients and doctors
 -   User-friendly interface with multi-language support
--   Authentication and authorization (JWT)
 
 ---
 
